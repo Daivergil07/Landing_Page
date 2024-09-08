@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     align-items: center;
     justify-content: center;
@@ -14,6 +18,7 @@ body {
 }
 
 header {
+    display: flex;
     background: #333;
     color: #fff;
     padding: 5px;
@@ -189,17 +194,6 @@ margin: 2px;
 }
 
 
-@keyframes slidein {
-    from {
-      translate: 200vw 0;
-      scale: 200% 1;
-    }
-    to {
-      translate: 0 0;
-      scale: 100% 1;
-    }
-}
-
 #about {
     background: #333;
     text-align: center;
@@ -267,22 +261,6 @@ margin: 2px;
 
 .product-card:hover {
     transform: translateY(-10px);
-}
-
-@keyframes animate-in-and-out2 {
-	entry 0%  {
-		opacity: 0; transform: translateX(-50%);
-	}
-	entry 100%  {
-		opacity: 1; transform: translateX(0);
-	}
-
-	exit 0% {
-		opacity: 1; transform: translateX(0);
-	}
-	exit 100% {
-		opacity: 0; transform: translateX(200%);
-	}
 }
 
 #features {
@@ -375,21 +353,6 @@ margin: 2px;
 	animation-timeline: view();
 }
 
-@keyframes animate-in-and-out {
-	entry 0%  {
-		opacity: 0; transform: translateX(50%);
-	}
-	entry 100%  {
-		opacity: 1; transform: translateX(0);
-	}
-
-	exit 0% {
-		opacity: 1; transform: translateX(0);
-	}
-	exit 100% {
-		opacity: 0; transform: translateX(-100%);
-	}
-}
 
 #contact {
     background: #333;
