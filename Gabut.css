@@ -1,0 +1,450 @@
+body {
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    margin: 0;
+    background-color: #222;
+}
+
+.container {
+    width: 350px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.logo h1 {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover{
+    color: chocolate;
+}
+
+.div-gabut {
+    background-color: #333;
+    width: 100%;
+    height: 100px;
+}
+
+
+.li-gabut {
+
+    border: 10px; 
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.Judul-gabut {
+    color: rgb(255, 255, 255);
+}
+
+.a-gabut {
+    border: 10px;
+    list-style-type: none;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.p-gabut {
+    color: white;
+}
+
+.ab-gabut {
+    justify-content: center;
+    align-items: center;
+width: 100px;
+height: 50px;
+padding: 10pxs;
+color: white;
+
+list-style-type: none;
+}
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner video{
+    position: absolute;
+    object-fit: cover;
+    width: 50%;
+    height: 50%;
+
+}
+
+.banner h4{
+    font-size: 15px;
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+    
+.banner li{
+    font-size: 60px;
+    position: absolute;
+    z-index: 2;
+    color: white;
+    list-style-type: none;
+}
+
+.logo-gabut{
+display: flex;
+float: left;
+ position: relative;
+justify-content: left;
+padding: 10px;
+margin: 2px;
+}
+
+.cta {
+    display: inline-block;   
+    padding: 10px 25px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+.ctas {
+    display: inline-block;   
+    padding: 10px 15px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+
+.ctaa {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.ctaa:hover {
+    background: #555;
+    color: chocolate;
+}
+
+.cta:hover {
+    background: #555;
+    color: chocolate;
+}
+
+
+@keyframes slidein {
+    from {
+      translate: 200vw 0;
+      scale: 200% 1;
+    }
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+}
+
+#about {
+    background: #333;
+    text-align: center;
+    animation: linear animate-in-and-out2;
+	animation-timeline: view();
+    transition: background 0.3s;
+}
+
+#about .about-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    animation: linear animate-in-and-out;
+	animation-timeline: view();
+}
+
+.about {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.about i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.about:hover {
+    background: #222;
+    color: #000;
+}
+
+
+
+#products {
+    background: #333;
+    text-align: center;
+    animation: linear animate-in-and-out2;
+	animation-timeline: view();
+}
+
+.product-card {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+@keyframes animate-in-and-out2 {
+	entry 0%  {
+		opacity: 0; transform: translateX(-50%);
+	}
+	entry 100%  {
+		opacity: 1; transform: translateX(0);
+	}
+
+	exit 0% {
+		opacity: 1; transform: translateX(0);
+	}
+	exit 100% {
+		opacity: 0; transform: translateX(200%);
+	}
+}
+
+#features {
+    background: #fff;
+    text-align: center;
+    animation: linear animate-in-and-out;
+	animation-timeline: view();
+}
+
+#features .features-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    animation: linear animate-in-and-out;
+	animation-timeline: view();
+}
+
+.feature {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.feature i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.feature:hover {
+    background: #222;
+    color: #000;
+}
+
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    #hero h2 {
+        font-size: 2.5rem;
+    }
+
+    #features .features-row {
+        flex-direction: column;
+    }
+
+    .product-card {
+        width: 80%;
+    }
+
+    .addres-map {
+        flex-direction: column;
+    }
+}
+
+@keyframes slidein {
+    from {
+      translate: 200vw 0;
+      scale: 200% 1;
+    }
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+}
+
+#features {
+    background: #333;
+    text-align: center;
+    animation: linear animate-in-and-out;
+	animation-timeline: view();
+}
+
+#features .features-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    animation: linear animate-in-and-out;
+	animation-timeline: view();
+}
+
+@keyframes animate-in-and-out {
+	entry 0%  {
+		opacity: 0; transform: translateX(50%);
+	}
+	entry 100%  {
+		opacity: 1; transform: translateX(0);
+	}
+
+	exit 0% {
+		opacity: 1; transform: translateX(0);
+	}
+	exit 100% {
+		opacity: 0; transform: translateX(-100%);
+	}
+}
+
+#contact {
+    background: #333;
+    text-align: center;
+    padding: 40px 0;
+    animation: linear animate-in-and-out;
+	animation-timeline: view();
+}
+
+.addres-map {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.addres {
+    color: white;
+    flex: 1;
+    padding: 20px;
+}
+
+.map {
+    color: white;
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social {
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer .social li {
+    color: white;
+    margin: 0 10px;
+}
+
+footer .social li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
